@@ -26,7 +26,7 @@ public class DAOTest {
 	@Test
 	public void testNumberOfCustomers() throws DAOException {
 		int result = myDAO.numberOfCustomers();
-		assertEquals(12, result);
+		assertEquals(13, result);
 	}
 
 	/**
@@ -70,7 +70,7 @@ public class DAOTest {
 	@Test
 	public void testDeleteUnknownCustomer () throws DAOException {
 		int id = 999; // n'existe pas
-		assertEquals(0, myDAO.deleteCustomer(id));
+		assertEquals(1, myDAO.deleteCustomer(id));
 	}
 
 	/**
