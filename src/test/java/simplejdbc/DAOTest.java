@@ -70,7 +70,7 @@ public class DAOTest {
 	@Test
 	public void testDeleteUnknownCustomer () throws DAOException {
 		int id = 999; // n'existe pas
-		assertEquals(1, myDAO.deleteCustomer(id));
+		assertEquals(0, myDAO.deleteCustomer(id));
 	}
 
 	/**
